@@ -1,64 +1,93 @@
+# 🔍 Gifs Browser App 🚀
 
-# GifsApp
+¡Bienvenido a la aplicación **Gifs Browser App**! Una herramienta dinámica y atractiva desarrollada con Angular que te permite explorar los GIFs más populares del momento y buscar tus GIFs favoritos con facilidad.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+Esta aplicación demuestra habilidades clave en el desarrollo frontend, incluyendo el consumo de APIs externas, la gestión eficiente del estado.
 
-## Development server
+## ✨ Características Principales
 
-To start a local development server, run:
+* **Tendencias de GIFs:** Visualiza una galería de los GIFs más populares y en tendencia, actualizados constantemente.
+* **Buscador Integrado:** Un potente buscador que te permite encontrar cualquier GIF por palabra clave, con sugerencias y resultados instantáneos.
+* **Carga Infinita (Lazy Loading):** Los resultados del buscador y los GIFs en tendencia se cargan de forma eficiente a medida que el usuario se desplaza, optimizando el rendimiento y la experiencia.
+* **Gestión del Estado:** Implementación clara y eficiente para manejar los resultados de búsqueda y el historial.
+* **Manejo de Peticiones HTTP:** Consumo de APIs externas para obtener los datos de los GIFs.
 
-```bash
-ng serve
-```
+## 🛠️ Tecnologías Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Frontend:
 
-## Code scaffolding
+* [**Angular**](https://angular.io/) - Framework para la construcción de la interfaz de usuario.
+* [**RxJS**](https://rxjs.dev/) - Para la gestión de flujos de datos asíncronos (especialmente útil en el buscador para debounce).
+* **API de Gifs:** Se conecta a una API externa (como Giphy API o similar) para obtener los datos de los GIFs.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🚀 Cómo Ejecutar el Proyecto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para poner en marcha la aplicación de GIFs en tu entorno local, sigue estos pasos:
 
-```bash
-ng generate --help
-```
+### Requisitos Previos
 
-## Building
+* Node.js (versión 18 o superior)
+* npm o Yarn
+* **Clave de API:** Necesitarás una clave de API de la plataforma de GIFs que utilices (ej. Giphy). Regístrate en su sitio web y obtén tu clave.
 
-To build the project run:
+### Pasos
 
-```bash
-ng build
-```
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/Jose-designer-23/Gifs-browser](https://github.com/Jose-designer-23/Gifs-browser)
+    cd Gifs-browser
+    ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    # o si usas Yarn
+    # yarn install
+    ```
 
-## Running unit tests
+3.  **Configurar la clave de API:**
+    * Dentro de la carpeta `src/environments/` (o donde tengas tus variables de entorno), abre el archivo `environment.ts` (y/o `environment.prod.ts` si la tienes).
+    * Añade tu clave de API obtenida en los requisitos previos. Por ejemplo:
+        ```typescript
+        export const environment = {
+          production: false,
+          apiKey: 'TU_CLAVE_DE_API_AQUI' // <--- Inserta tu clave aquí
+        };
+        ```
+        (El nombre de la variable `apiKey` puede variar según cómo la hayas implementado en tu código).
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+4.  **Iniciar la aplicación:**
+    ```bash
+    ng serve
+    ```
 
-```bash
-ng test
-```
+5.  **Acceder a la Aplicación:**
+    Abre tu navegador y ve a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques los archivos fuente.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 💻 Comandos de Desarrollo (Angular CLI)
 
-```bash
-ng e2e
-```
+Esta sección proporciona una referencia rápida a los comandos más comunes de Angular CLI.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-# Gifs-browser
-Es una aplicación para ver los gifs en tendencias y para buscar los gifs que mas te gusten.
+* **Arrancar el Servidor de Desarrollo:**
+    ```bash
+    ng serve
+    ```
+* **Generar Componentes, Servicios, etc.:**
+    ```bash
+    ng generate component nombre-del-componente
+    ng generate service services/mi-servicio
+    # Para ver una lista completa de esquemas: ng generate --help
+    ```
+* **Construir el Proyecto para Producción:**
+    ```bash
+    ng build
+    ```
+* **Ejecutar Pruebas Unitarias:**
+    ```bash
+    ng test
+    ```
 
