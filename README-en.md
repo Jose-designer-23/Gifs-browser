@@ -14,15 +14,12 @@ This application demonstrates key frontend development skills, including consumi
 
 ## 🛠️ Technologies Used
 
-### Frontend & Development Tools:
+### Frontend:
 
 * **[Angular](https://angular.io/) (v19.2.0, with Signals):** Primary framework for user interface construction. Used to develop interactive components and manage frontend logic, leveraging Signals for reactive and efficient state management.
 * **[TypeScript](https://www.typescriptlang.org/) (~5.7.2):** Base programming language, a superset of JavaScript, which provides static typing for more robust and scalable development.
 * **[Tailwind CSS](https://tailwindcss.com/) (v4.1.6):** A utility-first CSS framework for rapid and responsive design, allowing for the creation of custom user interfaces directly in HTML.
 * **[RxJS](https://rxjs.dev/) (~7.8.0):** For managing asynchronous data streams, especially useful in the search bar for implementing *debounce* and optimizing API calls.
-* **[PostCSS](https://postcss.org/) (v8.5.3):** A tool for transforming CSS with JavaScript plugins.
-* **[Angular CLI](https://angular.io/cli) (v19.2.11):** Fundamental command-line interface tool for initializing, developing, building, and maintaining Angular applications.
-* **[Karma](https://karma-runner.github.io/latest/index.html) and [Jasmine](https://jasmine.github.io/):** Used for frontend unit testing, ensuring code quality and correct functionality.
 
 ### Data Integration:
 
