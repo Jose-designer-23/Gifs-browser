@@ -16,7 +16,7 @@ Esta aplicación demuestra habilidades clave en el desarrollo frontend, incluyen
 
 ### Frontend :
 
-* **[Angular](https://angular.io/) (v19.2.0, con Signals):** Framework principal para la construcción de la interfaz de usuario. Empleado para desarrollar componentes interactivos y gestionar la lógica del frontend, utilizando la funcionalidad de Signals para una gestión de estado reactiva y eficiente.
+* **[Angular](https://angular.io/) (v19.2.14, con Signals):** Framework principal para la construcción de la interfaz de usuario. Empleado para desarrollar componentes interactivos y gestionar la lógica del frontend, utilizando la funcionalidad de Signals para una gestión de estado reactiva y eficiente.
 * **[TypeScript](https://www.typescriptlang.org/) (~5.7.2):** Lenguaje de programación base, superset de JavaScript, que aporta tipado estático para un desarrollo más robusto y escalable.
 * **[Tailwind CSS](https://tailwindcss.com/) (v4.1.6):** Un framework CSS de utilidad para un diseño rápido y responsivo, permitiendo la creación de interfaces de usuario personalizadas directamente en el HTML.
 * **[RxJS](https://rxjs.dev/) (~7.8.0):** Para la gestión de flujos de datos asíncronos, especialmente útil en el buscador para implementar el *debounce* y optimizar las llamadas a la API.
